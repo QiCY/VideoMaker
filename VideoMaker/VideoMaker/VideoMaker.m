@@ -11,6 +11,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <AVKit/AVKit.h>
+#define Video_Size    CGSizeMake(640, 960)
 @implementation VideoMaker
 
 +(id)shareInstance{
@@ -128,7 +129,7 @@
         /**
          *  缩放
          */
-        UIImage *finalImage = [VideoMaker clipImage:newImage ScaleWithsize:CGSizeMake(640, 960)];
+        UIImage *finalImage = [VideoMaker clipImage:newImage ScaleWithsize:Video_Size];
         [imageArray addObject:finalImage];
     }
     
@@ -140,7 +141,7 @@
         [[NSFileManager defaultManager] removeItemAtPath:cachePath error:nil];
     }
     NSURL    *exportUrl = [NSURL fileURLWithPath:cachePath];
-    CGSize size = CGSizeMake(640,640);//定义视频的大小
+    CGSize size = Video_Size;//定义视频的大小
     __block AVAssetWriter *videoWriter = [[AVAssetWriter alloc] initWithURL:exportUrl
                                                                    fileType:AVFileTypeQuickTimeMovie
                                                                       error:nil];
