@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18F13D381F95E70C008E34BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F13D371F95E70C008E34BE /* AppDelegate.m */; };
+		18F13D3B1F95E70C008E34BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F13D3A1F95E70C008E34BE /* ViewController.m */; };
+		18F13D3E1F95E70C008E34BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F13D3C1F95E70C008E34BE /* Main.storyboard */; };
+		18F13D401F95E70C008E34BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F13D3F1F95E70C008E34BE /* Assets.xcassets */; };
+		18F13D431F95E70C008E34BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F13D411F95E70C008E34BE /* LaunchScreen.storyboard */; };
+		18F13D461F95E70C008E34BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F13D451F95E70C008E34BE /* main.m */; };
+		18F13D4F1F95E745008E34BE /* VideoMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F13D4E1F95E745008E34BE /* VideoMaker.m */; };
+		18F13D521F95E7AC008E34BE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F13D511F95E7AC008E34BE /* AVFoundation.framework */; };
+		18F13D541F95E7B4008E34BE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F13D531F95E7B4008E34BE /* CoreMedia.framework */; };
+		18F13D561F95E7BF008E34BE /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F13D551F95E7BF008E34BE /* CoreVideo.framework */; };
+		18F13D581F95E7DB008E34BE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F13D571F95E7DB008E34BE /* MediaPlayer.framework */; };
+		18F13D5A1F95E7E4008E34BE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F13D591F95E7E4008E34BE /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18F13D331F95E70C008E34BE /* VideoMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F13D361F95E70C008E34BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18F13D371F95E70C008E34BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18F13D391F95E70C008E34BE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18F13D3A1F95E70C008E34BE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18F13D3D1F95E70C008E34BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18F13D3F1F95E70C008E34BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18F13D421F95E70C008E34BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18F13D441F95E70C008E34BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F13D451F95E70C008E34BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18F13D4D1F95E745008E34BE /* VideoMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoMaker.h; sourceTree = "<group>"; };
+		18F13D4E1F95E745008E34BE /* VideoMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoMaker.m; sourceTree = "<group>"; };
+		18F13D511F95E7AC008E34BE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		18F13D531F95E7B4008E34BE /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		18F13D551F95E7BF008E34BE /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		18F13D571F95E7DB008E34BE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		18F13D591F95E7E4008E34BE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18F13D301F95E70C008E34BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F13D5A1F95E7E4008E34BE /* QuartzCore.framework in Frameworks */,
+				18F13D581F95E7DB008E34BE /* MediaPlayer.framework in Frameworks */,
+				18F13D561F95E7BF008E34BE /* CoreVideo.framework in Frameworks */,
+				18F13D541F95E7B4008E34BE /* CoreMedia.framework in Frameworks */,
+				18F13D521F95E7AC008E34BE /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18F13D2A1F95E70C008E34BE = {
+			isa = PBXGroup;
+			children = (
+				18F13D351F95E70C008E34BE /* VideoMaker */,
+				18F13D341F95E70C008E34BE /* Products */,
+				18F13D501F95E7AC008E34BE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18F13D341F95E70C008E34BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18F13D331F95E70C008E34BE /* VideoMaker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18F13D351F95E70C008E34BE /* VideoMaker */ = {
+			isa = PBXGroup;
+			children = (
+				18F13D4C1F95E718008E34BE /* VideoMaker */,
+				18F13D361F95E70C008E34BE /* AppDelegate.h */,
+				18F13D371F95E70C008E34BE /* AppDelegate.m */,
+				18F13D391F95E70C008E34BE /* ViewController.h */,
+				18F13D3A1F95E70C008E34BE /* ViewController.m */,
+				18F13D3C1F95E70C008E34BE /* Main.storyboard */,
+				18F13D3F1F95E70C008E34BE /* Assets.xcassets */,
+				18F13D411F95E70C008E34BE /* LaunchScreen.storyboard */,
+				18F13D441F95E70C008E34BE /* Info.plist */,
+				18F13D451F95E70C008E34BE /* main.m */,
+			);
+			path = VideoMaker;
+			sourceTree = "<group>";
+		};
+		18F13D4C1F95E718008E34BE /* VideoMaker */ = {
+			isa = PBXGroup;
+			children = (
+				18F13D4D1F95E745008E34BE /* VideoMaker.h */,
+				18F13D4E1F95E745008E34BE /* VideoMaker.m */,
+			);
+			path = VideoMaker;
+			sourceTree = "<group>";
+		};
+		18F13D501F95E7AC008E34BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18F13D591F95E7E4008E34BE /* QuartzCore.framework */,
+				18F13D571F95E7DB008E34BE /* MediaPlayer.framework */,
+				18F13D551F95E7BF008E34BE /* CoreVideo.framework */,
+				18F13D531F95E7B4008E34BE /* CoreMedia.framework */,
+				18F13D511F95E7AC008E34BE /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18F13D321F95E70C008E34BE /* VideoMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F13D491F95E70C008E34BE /* Build configuration list for PBXNativeTarget "VideoMaker" */;
+			buildPhases = (
+				18F13D2F1F95E70C008E34BE /* Sources */,
+				18F13D301F95E70C008E34BE /* Frameworks */,
+				18F13D311F95E70C008E34BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoMaker;
+			productName = VideoMaker;
+			productReference = 18F13D331F95E70C008E34BE /* VideoMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18F13D2B1F95E70C008E34BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = apple;
+				TargetAttributes = {
+					18F13D321F95E70C008E34BE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 18F13D2E1F95E70C008E34BE /* Build configuration list for PBXProject "VideoMaker" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18F13D2A1F95E70C008E34BE;
+			productRefGroup = 18F13D341F95E70C008E34BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18F13D321F95E70C008E34BE /* VideoMaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18F13D311F95E70C008E34BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F13D431F95E70C008E34BE /* LaunchScreen.storyboard in Resources */,
+				18F13D401F95E70C008E34BE /* Assets.xcassets in Resources */,
+				18F13D3E1F95E70C008E34BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18F13D2F1F95E70C008E34BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F13D3B1F95E70C008E34BE /* ViewController.m in Sources */,
+				18F13D461F95E70C008E34BE /* main.m in Sources */,
+				18F13D4F1F95E745008E34BE /* VideoMaker.m in Sources */,
+				18F13D381F95E70C008E34BE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18F13D3C1F95E70C008E34BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18F13D3D1F95E70C008E34BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18F13D411F95E70C008E34BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18F13D421F95E70C008E34BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18F13D471F95E70C008E34BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18F13D481F95E70C008E34BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18F13D4A1F95E70C008E34BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VideoMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qicy.com.VideoMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18F13D4B1F95E70C008E34BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VideoMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qicy.com.VideoMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18F13D2E1F95E70C008E34BE /* Build configuration list for PBXProject "VideoMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F13D471F95E70C008E34BE /* Debug */,
+				18F13D481F95E70C008E34BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F13D491F95E70C008E34BE /* Build configuration list for PBXNativeTarget "VideoMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F13D4A1F95E70C008E34BE /* Debug */,
+				18F13D4B1F95E70C008E34BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18F13D2B1F95E70C008E34BE /* Project object */;
+}
