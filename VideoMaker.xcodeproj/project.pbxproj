@@ -19,6 +19,7 @@
 		18F13D561F95E7BF008E34BE /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F13D551F95E7BF008E34BE /* CoreVideo.framework */; };
 		18F13D581F95E7DB008E34BE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F13D571F95E7DB008E34BE /* MediaPlayer.framework */; };
 		18F13D5A1F95E7E4008E34BE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F13D591F95E7E4008E34BE /* QuartzCore.framework */; };
+		8A58A45DCD5355488BA09488 /* libPods-VideoMaker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1E0AA615C309C5E2F245D1 /* libPods-VideoMaker.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,9 @@
 		18F13D551F95E7BF008E34BE /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		18F13D571F95E7DB008E34BE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		18F13D591F95E7E4008E34BE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BA1E0AA615C309C5E2F245D1 /* libPods-VideoMaker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VideoMaker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD0E80469A6E70E24843323 /* Pods-VideoMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoMaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoMaker/Pods-VideoMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		EE18B8189417E7C045A3753B /* Pods-VideoMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoMaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoMaker/Pods-VideoMaker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 				18F13D561F95E7BF008E34BE /* CoreVideo.framework in Frameworks */,
 				18F13D541F95E7B4008E34BE /* CoreMedia.framework in Frameworks */,
 				18F13D521F95E7AC008E34BE /* AVFoundation.framework in Frameworks */,
+				8A58A45DCD5355488BA09488 /* libPods-VideoMaker.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +68,7 @@
 				18F13D351F95E70C008E34BE /* VideoMaker */,
 				18F13D341F95E70C008E34BE /* Products */,
 				18F13D501F95E7AC008E34BE /* Frameworks */,
+				343AC73C6F3E0D22094F251C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,8 +114,18 @@
 				18F13D551F95E7BF008E34BE /* CoreVideo.framework */,
 				18F13D531F95E7B4008E34BE /* CoreMedia.framework */,
 				18F13D511F95E7AC008E34BE /* AVFoundation.framework */,
+				BA1E0AA615C309C5E2F245D1 /* libPods-VideoMaker.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		343AC73C6F3E0D22094F251C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDD0E80469A6E70E24843323 /* Pods-VideoMaker.debug.xcconfig */,
+				EE18B8189417E7C045A3753B /* Pods-VideoMaker.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18F13D491F95E70C008E34BE /* Build configuration list for PBXNativeTarget "VideoMaker" */;
 			buildPhases = (
+				41B3B52C455CE4E63467E5DD /* [CP] Check Pods Manifest.lock */,
 				18F13D2F1F95E70C008E34BE /* Sources */,
 				18F13D301F95E70C008E34BE /* Frameworks */,
 				18F13D311F95E70C008E34BE /* Resources */,
+				D5D0241099EE0D6353DBCDF7 /* [CP] Embed Pods Frameworks */,
+				C46BD22C03B05717F0B36090 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,6 +196,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41B3B52C455CE4E63467E5DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VideoMaker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C46BD22C03B05717F0B36090 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoMaker/Pods-VideoMaker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5D0241099EE0D6353DBCDF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoMaker/Pods-VideoMaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18F13D2F1F95E70C008E34BE /* Sources */ = {
@@ -318,6 +388,7 @@
 		};
 		18F13D4A1F95E70C008E34BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDD0E80469A6E70E24843323 /* Pods-VideoMaker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -331,6 +402,7 @@
 		};
 		18F13D4B1F95E70C008E34BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE18B8189417E7C045A3753B /* Pods-VideoMaker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

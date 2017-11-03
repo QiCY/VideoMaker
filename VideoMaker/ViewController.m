@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "VideoMaker.h"
+#import <AFNetworking.h>
+#import<AssetsLibrary/AssetsLibrary.h>
 @interface ViewController ()
 @property(nonatomic,strong)NSURL *theVideoPath;
 @end
@@ -36,15 +38,27 @@
     
     
 }
+-(void)saveVideoToLibary:(NSURL *)url{
+    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+    [library writeVideoAtPathToSavedPhotosAlbum:url
+                                completionBlock:^(NSURL *assetURL, NSError *error) {
+                                    if (error) {
+                                        NSLog(@"Save video fail:%@",error);
+                                    } else {
+                                        NSLog(@"Save video succeed.");
+                                    }
+                                }];
+}
 -(void)beginMakeVideo{
     NSMutableArray *array = [NSMutableArray array];
     for (int i =1 ; i<7; i++) {
         UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg",i]];
         [array addObject:image];
     }
-    
+    __weak typeof(self) weakSelf = self;
     [[VideoMaker shareInstance] compressImages:array completion:^(NSURL *outurl) {
         _theVideoPath = outurl;
+        [weakSelf saveVideoToLibary:outurl];
     }];
 }
 //播放
